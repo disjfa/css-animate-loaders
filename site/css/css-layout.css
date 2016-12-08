@@ -1,0 +1,202 @@
+.css-loader {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  position: relative; }
+  .css-loader .cat {
+    background: #f1c40f;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-radius: 15px 25px 5px 5px; }
+    .css-loader .cat .cat-head {
+      animation: bobble-head 2s infinite;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: #e8bd0e;
+      top: -30px;
+      left: -5px;
+      border-radius: 10px 15px 15px 20px; }
+      .css-loader .cat .cat-head:before, .css-loader .cat .cat-head:after {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        display: block;
+        content: " ";
+        border-style: solid;
+        border-width: 2px 2px 0 0;
+        border-radius: 50%;
+        border-color: #f8e287;
+        transform: rotate(-45deg); }
+      .css-loader .cat .cat-head:before {
+        left: 10px;
+        top: 10px; }
+      .css-loader .cat .cat-head:after {
+        right: 10px;
+        top: 10px; }
+      .css-loader .cat .cat-head .cat-ears {
+        position: absolute;
+        width: 100%; }
+        .css-loader .cat .cat-head .cat-ears:before, .css-loader .cat .cat-head .cat-ears:after {
+          position: absolute;
+          content: " ";
+          width: 6px;
+          height: 6px;
+          border-style: solid;
+          border-width: 2px 2px 0 0;
+          border-color: #e8bd0e;
+          transform: rotate(-45deg); }
+        .css-loader .cat .cat-head .cat-ears:before {
+          left: 10px;
+          top: -3px; }
+        .css-loader .cat .cat-head .cat-ears:after {
+          right: 15px;
+          top: -3px; }
+    .css-loader .cat .cat-feet {
+      position: absolute;
+      width: 100%;
+      bottom: 0; }
+      .css-loader .cat .cat-feet:before, .css-loader .cat .cat-feet:after {
+        position: absolute;
+        content: " ";
+        width: 10px;
+        height: 10px;
+        background: #f1c40f;
+        border-radius: 50%; }
+      .css-loader .cat .cat-feet:before {
+        left: 10px;
+        top: -6px; }
+      .css-loader .cat .cat-feet:after {
+        right: 15px;
+        top: -6px; }
+
+@keyframes bobble-head {
+  0% {
+    transform: rotate(-30deg);
+    top: -35px; }
+  15% {
+    top: -30px; }
+  30% {
+    transform: rotate(30deg);
+    top: -35px; }
+  70% {
+    top: -30px; }
+  100% {
+    transform: rotate(-30deg);
+    top: -35px; } }
+
+.css-loader {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  position: relative; }
+  .css-loader .house {
+    background: #34495e;
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0; }
+    .css-loader .house .house-building {
+      animation: house-building 5s infinite;
+      position: absolute;
+      background: #95a5a6;
+      width: 30px;
+      height: 30px;
+      bottom: 0;
+      right: 10px; }
+    .css-loader .house .house-roof {
+      animation: house-roof 5s infinite;
+      position: absolute;
+      transform: rotate(-45deg);
+      background: #95a5a6;
+      width: 22px;
+      height: 22px;
+      border-color: #000;
+      border-width: 4px 4px 0 0;
+      border-style: solid;
+      right: 12px;
+      bottom: 20px; }
+    .css-loader .house .house-door {
+      animation: house-door 5s infinite;
+      position: absolute;
+      background: #95a5a6;
+      width: 10px;
+      height: 20px;
+      bottom: 0;
+      right: 14px;
+      background: #34495e; }
+    .css-loader .house .house-window {
+      animation: house-window 5s infinite;
+      position: absolute;
+      background: #95a5a6;
+      width: 8px;
+      height: 8px;
+      bottom: 8px;
+      right: 26px;
+      border-color: #34495e;
+      border-width: 2px;
+      border-style: solid; }
+      .css-loader .house .house-window:before, .css-loader .house .house-window:after {
+        position: absolute;
+        content: " ";
+        background: #34495e;
+        width: 2px;
+        height: 100%;
+        left: 50%; }
+      .css-loader .house .house-window:before {
+        transform: translate(-1px, 0); }
+      .css-loader .house .house-window:after {
+        transform: translate(-1px, 0) rotate(90deg); }
+
+@keyframes house-building {
+  0% {
+    opacity: 1;
+    bottom: 80px; }
+  5% {
+    bottom: 0; }
+  95% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes house-roof {
+  0% {
+    opacity: 1;
+    bottom: 80px; }
+  5% {
+    bottom: 80px; }
+  10% {
+    bottom: 20px; }
+  95% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes house-door {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 0; }
+  15% {
+    opacity: 1; }
+  95% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes house-window {
+  0% {
+    opacity: 0; }
+  15% {
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  95% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }

@@ -1,0 +1,149 @@
+$house-color: #34495e;
+
+.css-loader {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  position: relative;
+
+  .house {
+    background: $house-color;
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    .house-building {
+      animation: house-building 5s infinite;
+      position: absolute;
+      background: #95a5a6;
+      width: 30px;
+      height: 30px;
+      bottom: 0;
+      right: 10px;
+    }
+    .house-roof {
+      animation: house-roof 5s infinite;
+      position: absolute;
+      transform: rotate(-45deg);
+      background: #95a5a6;
+      width: 22px;
+      height: 22px;
+      border-color: #000;
+      border-width: 4px 4px 0 0;
+      border-style: solid;
+      right: 12px;
+      bottom: 20px;
+    }
+    .house-door {
+      animation: house-door 5s infinite;
+      position: absolute;
+      background: #95a5a6;
+      width: 10px;
+      height: 20px;
+      bottom: 0;
+      right: 14px;
+      background: $house-color;
+    }
+    .house-window {
+      animation: house-window 5s infinite;
+      position: absolute;
+      background: #95a5a6;
+      width: 8px;
+      height: 8px;
+      bottom: 8px;
+      right: 26px;
+      border-color: $house-color;
+      border-width: 2px;
+      border-style: solid;
+      &:before,
+      &:after {
+        position: absolute;
+        content: " ";
+        background: $house-color;
+        width: 2px;
+        height: 100%;
+        left: 50%;
+      }
+      &:before {
+        transform: translate(-1px, 0);
+      }
+      &:after {
+        transform: translate(-1px, 0) rotate(90deg);
+      }
+    }
+  }
+}
+
+@keyframes house-building {
+  0% {
+    opacity: 1;
+    bottom: 80px;
+  }
+  5% {
+    bottom: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes house-roof {
+  0% {
+    opacity: 1;
+    bottom: 80px;
+  }
+  5% {
+    bottom: 80px;
+  }
+  10% {
+    bottom: 20px;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes house-door {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes house-window {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
